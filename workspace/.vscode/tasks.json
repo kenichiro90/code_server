@@ -6,7 +6,7 @@
         {
             "label": "python",
             // "command": "${config:python.pythonPath}",
-            "command": "python",
+            "command": "python3",
             "type": "shell",
             "args": ["${file}"],
             "group": {
