@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  code-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "22:22"
+      - "80:80"
+      - "3000:3000"
+      - "8000:8000"
+    volumes:
+      - ~/vscode_server/workspace:/root
+    tty: true
